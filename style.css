@@ -66,8 +66,9 @@ body::after{
 
 /* Message Box */
 .message-box{
-    margin:30px auto;
-    width:85vw;
+    width: 85%;
+    max-width: 380px;
+    margin: 30px auto;
     padding:25px;
     border-radius:25px;
 
