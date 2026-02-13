@@ -1,8 +1,11 @@
 body{
-    margin:0;
-    font-family:'Shippori Antique', sans-serif;
-    overflow:hidden;
-    color:white;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
 /* Background image */
@@ -31,10 +34,14 @@ body::after{
 }
 
 .container{
-    position:relative;
-    text-align:center;
-    margin-top:12vh;
-    padding:20px;
+    width: 92%;
+    max-width: 420px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 /* Top Circle */
@@ -69,6 +76,7 @@ body::after{
     max-width:420px;
     padding:25px;
     border-radius:25px;
+
     background:rgba(0,0,0,.55);
     backdrop-filter:blur(10px);
 
@@ -76,7 +84,21 @@ body::after{
     box-shadow:
         0 0 20px rgba(255,255,255,.2),
         inset 0 0 10px rgba(255,255,255,.05);
+
+    /* 🔥 Mobile Fix Additions */
+    max-height:55vh;
+    overflow-y:auto;
 }
+
+.message-box::-webkit-scrollbar{
+    width:4px;
+}
+
+.message-box::-webkit-scrollbar-thumb{
+    background:rgba(255,255,255,.2);
+    border-radius:10px;
+}
+
 
 #messageText{
     font-size:18px;
@@ -123,3 +145,4 @@ body::after{
 #topEmoji{
     transition: opacity 0.3s ease;
 }
+
