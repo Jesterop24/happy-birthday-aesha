@@ -1,12 +1,9 @@
 body{
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+    margin:0;
+    padding:0;
+    min-height:100vh;
 }
+
 
 /* Background image */
 body::before{
@@ -34,15 +31,13 @@ body::after{
 }
 
 .container{
-    width: 92%;
-    max-width: 420px;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    width:90%;
+    max-width:420px;
+    margin:0 auto;
+    padding-top:40px;
+    text-align:center;
 }
+
 
 /* Top Circle */
 .top-circle{
@@ -71,9 +66,8 @@ body::after{
 
 /* Message Box */
 .message-box{
-    margin:35px auto;
-    width:90%;
-    max-width:420px;
+    margin:30px auto;
+    width:100%;
     padding:25px;
     border-radius:25px;
 
@@ -85,10 +79,10 @@ body::after{
         0 0 20px rgba(255,255,255,.2),
         inset 0 0 10px rgba(255,255,255,.05);
 
-    /* 🔥 Mobile Fix Additions */
-    max-height:55vh;
+    max-height:60vh;
     overflow-y:auto;
 }
+
 
 .message-box::-webkit-scrollbar{
     width:4px;
@@ -145,4 +139,5 @@ body::after{
 #topEmoji{
     transition: opacity 0.3s ease;
 }
+
 
